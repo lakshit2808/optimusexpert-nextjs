@@ -68,7 +68,7 @@ Stay ahead of the competition and navigate market complexities with confidence. 
         <br/><br/>
         With a deep understanding of market microstructure and advanced algorithmic techniques, we develop strategies that allow you to seize fleeting opportunities, execute trades with lightning speed, and optimize your trading outcomes. Our focus on rigorous backtesting, risk management, and optimization ensures that your high-frequency strategies are robust, reliable, and tailored to your specific needs.
         <br/><br/>
-        Partner with Optimus Expert for High-Frequency Strategy Development and stay ahead of the competition in today's fast-paced trading landscape. Unlock the power of speed and precision to maximize your trading potential.
+        Partner with Optimus Expert for High-Frequency Strategy Development and stay ahead of the competition in today&apos;s fast-paced trading landscape. Unlock the power of speed and precision to maximize your trading potential.
       </p>
     },
     {
@@ -95,7 +95,7 @@ Stay ahead of the competition and navigate market complexities with confidence. 
             <br/><br/>
             Our team of experts combines deep industry knowledge with innovative techniques to deliver superior portfolio performance. Through rigorous analysis and continuous monitoring, we ensure that your investments remain aligned with market dynamics, unlocking potential opportunities while minimizing downside risks.
             <br/><br/>
-            Experience the transformative power of Portfolio Optimization and Asset Allocation with Optimus Expert, and gain a competitive edge in today's dynamic financial landscape.
+            Experience the transformative power of Portfolio Optimization and Asset Allocation with Optimus Expert, and gain a competitive edge in today&apos;s dynamic financial landscape.
       </p>
 
     },
@@ -105,11 +105,11 @@ Stay ahead of the competition and navigate market complexities with confidence. 
       description: <p>
         Optimus Expert offers comprehensive Portfolio Risk Management Systems as a service, designed to help clients effectively navigate the complexities of risk in their investment portfolios. Our cutting-edge systems leverage advanced algorithms, data analytics, and risk modeling techniques to provide actionable insights and strategies.
         <br/><br/>
-        With Optimus Expert's Portfolio Risk Management Systems, clients gain a clear understanding of their portfolio's risk profile and potential vulnerabilities. Our tailored solutions enable proactive risk mitigation and optimization of risk-return trade-offs, allowing clients to make informed investment decisions and maximize returns.
+        With Optimus Expert&apos;s Portfolio Risk Management Systems, clients gain a clear understanding of their portfolio&apos;s risk profile and potential vulnerabilities. Our tailored solutions enable proactive risk mitigation and optimization of risk-return trade-offs, allowing clients to make informed investment decisions and maximize returns.
         <br/><br/>
         Our experienced team of risk management professionals collaborates closely with clients to customize risk management strategies that align with their unique investment objectives and risk tolerance. By implementing our robust systems, clients can enhance portfolio stability, protect capital, and achieve long-term growth.
         <br/><br/>
-        With Optimus Expert's Portfolio Risk Management Systems, you can navigate the investment landscape with confidence, knowing that your risks are effectively managed and your portfolio is poised for success.
+        With Optimus Expert&apos;s Portfolio Risk Management Systems, you can navigate the investment landscape with confidence, knowing that your risks are effectively managed and your portfolio is poised for success.
       </p>
 
     },
@@ -221,13 +221,13 @@ Stay ahead of the competition and navigate market complexities with confidence. 
       date: "June 2023",
       url: "https://www.linkedin.com/posts/lakshit2808_quantitativedeveloper-optionstrading-riskmanagement-activity-7078265273471897600-sHhW?utm_source=share&utm_medium=member_desktop",
       points: [
-        "Delta: Measures the sensitivity of an option's price to changes in the underlying asset's price, providing insights into directional risk.",
+        "Delta: Measures the sensitivity of an option&apos;s price to changes in the underlying asset&apos;s price, providing insights into directional risk.",
 
-        "Gamma: Represents the rate of change of Delta, highlighting the sensitivity of Delta itself to changes in the underlying asset's price.",
+        "Gamma: Represents the rate of change of Delta, highlighting the sensitivity of Delta itself to changes in the underlying asset&apos;s price.",
         
-       "Theta: Quantifies the impact of time decay on an option's price, helping traders assess the effect of time on their positions.",
+       "Theta: Quantifies the impact of time decay on an option&apos;s price, helping traders assess the effect of time on their positions.",
         
-      "Vega: Reflects the sensitivity of an option's price to changes in implied volatility, enabling traders to evaluate and manage volatility risks.",
+      "Vega: Reflects the sensitivity of an option&apos;s price to changes in implied volatility, enabling traders to evaluate and manage volatility risks.",
       ],
     },
     {
@@ -274,7 +274,7 @@ Stay ahead of the competition and navigate market complexities with confidence. 
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
+        "I&apos;ve never met a web developer who truly cares about their clients success like Rick does.",
       name: "Chris Brown",
       designation: "COO",
       company: "DEF Corp",
@@ -282,7 +282,7 @@ Stay ahead of the competition and navigate market complexities with confidence. 
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+        "After Rick optimized our website, our traffic increased by 50%. We can&apos;t thank them enough!",
       name: "Lisa Wang",
       designation: "CTO",
       company: "456 Enterprises",

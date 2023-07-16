@@ -17,33 +17,33 @@ export const Banner = () => {
 
   useEffect(() => {
     let ticker = setInterval(() => {
+      const tick = () => {
+        let i = loopNum % toRotate.length;
+        let fullText = toRotate[i];
+        let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+    
+        setText(updatedText);
+    
+        if (isDeleting) {
+          setDelta(prevDelta => prevDelta);
+        }
+    
+        if (!isDeleting && updatedText === fullText) {
+          setIsDeleting(true);
+          setDelta(period);
+        } else if (isDeleting && updatedText === '') {
+          setIsDeleting(false);
+          setLoopNum(loopNum + 1);
+          setDelta(50);
+        } else {
+        }
+      }      
       tick();
     }, delta);
 
     return () => { clearInterval(ticker) };
-  }, [text])
+  }, [text, delta, isDeleting, loopNum, toRotate])
 
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
-
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta(prevDelta => prevDelta);
-    }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setDelta(period);
-    } else if (isDeleting && updatedText === '') {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setDelta(50);
-    } else {
-    }
-  }
 
   return (
     <section className="banner" id="home">
@@ -57,8 +57,8 @@ export const Banner = () => {
                 <h1>{``} <span className="txt-rotate" dataperiod="500" data-rotate='[""]'><span className="wrap">{text}</span></span></h1>
                   <p>We are your trusted partner in navigating ongoing transformation across sectors, services, and platforms. At Optimus Expert, we believe in propelling the future of users, corporate entities, and institutions by seamlessly integrating the power of innovation, technology, and information. From New York to Mumbai, London to Canberra, we extend our minds, ideas, and challenge the boundaries of the conservative establishment.
                   <br/><br/>
-Leverage cutting-edge technologies, embrace new opportunities, and experience exponential growth. With Optimus Expert, you gain the agility and durability needed to thrive in today's rapidly evolving landscape. Let us empower you to embrace transformation, unlock precision, achieve outstanding performance, and drive profitability.</p>
-                  <a href="#connect" id="connect-redirect">Let’s Connect <ArrowRightCircle size={25} /></a>
+Leverage cutting-edge technologies, embrace new opportunities, and experience exponential growth. With Optimus Expert, you gain the agility and durability needed to thrive in today&apos;s rapidly evolving landscape. Let us empower you to embrace transformation, unlock precision, achieve outstanding performance, and drive profitability.</p>
+                  <a href="#connect" id="connect-redirect">Let&apos;s Connect <ArrowRightCircle size={25} /></a>
               </div>}
             </TrackVisibility>
           </Col>
