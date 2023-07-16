@@ -3,12 +3,9 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import TrackVisibility from 'react-on-screen';
-import axios from "axios";
-import APIURL from "./APIURL";
 import Image from "next/image";
 
 export const Contact = () => {
-
 
   const formInitialDetails = {
     First_Name: '',
@@ -30,19 +27,23 @@ export const Contact = () => {
   }
 
   const PostReq = (data) => {
-    axios.post(APIURL, data)
-      .then(res => console.log(res))
-    // console.log(formDetails)
-    // location.reload();
+    fetch('/api/contactsheet', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
   };
-  
+
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); 
     setButtonText("Sending...");
      (formDetails, "/oecontact")
-    PostReq(formDetails)
+     PostReq(formDetails)
     setButtonText("Send");
     setFormDetails(formInitialDetails);
+    location.reload();
   };
 
   return (
@@ -62,7 +63,7 @@ export const Contact = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h2>Get In Touch</h2>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} className="form">
                   <Row>
                     <Col size={12} sm={6} className="px-1">
                       <input required type="text" value={formDetails.First_Name} placeholder="First Name" onChange={(e) => onFormUpdate('First_Name', e.target.value)} />

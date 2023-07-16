@@ -1,15 +1,18 @@
 import { useState } from "react";
 import { Col, Row} from "react-bootstrap";
-import axios from "axios";
-import APIURL from "./APIURL";
 
 export const Newsletter = ({onValidated}) => {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
 
-  const PostReq = (name, email, endpoint) => {
-    axios.post(`${APIURL}/${endpoint}`, {name:name, email: email})
-      .then(res => alert.log(res))
+  const PostReq = (data) => {
+    fetch('/api/newslettersheet', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
   };
 
 
@@ -20,10 +23,10 @@ export const Newsletter = ({onValidated}) => {
     onValidated({
       EMAIL: email
     })
-    PostReq(name, email, "oenewsletter");
-    alert("Thank you for subscribing");
+    PostReq({Name: name, Email: email});
     setName('');
     setEmail('');
+    location.reload
   }
 
 
