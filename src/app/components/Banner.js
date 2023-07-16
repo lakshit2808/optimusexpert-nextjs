@@ -46,7 +46,7 @@ export const Banner = () => {
 
 
   return (
-    <section className="banner" id="home">
+    <section className="banner banner-up" id="home">
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
@@ -65,7 +65,7 @@ Leverage cutting-edge technologies, embrace new opportunities, and experience ex
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                <div className={isVisible ? "animate__animated animate__zoomIn animated-astronaut" : ""}>
                   <Image src={headerImg} alt="Header Img"/>
                 </div>}
             </TrackVisibility>

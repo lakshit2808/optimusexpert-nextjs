@@ -12,7 +12,7 @@ import Link from "next/link";
 const ServiceCard = ({ index, title, icon }) => (
   
 
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt className='xs:w-[250px] w-full service-box'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
@@ -70,7 +70,7 @@ We provide the Full Stack Application Solution for you. Our developers have deve
               className="my-5 w-auto px-8 h-10 bg-blue-600 no-underline text-white rounded-md shadow hover:shadow-lg font-semibold"
               href="#connect"
             >
-              <p className="relative top-2">Get in Touch</p>
+              <p className="relative top-2 info-box-button">Get in Touch</p>
             </a>
             <button
               className=" w-auto px-12 my-5 border border-red-100 h-10 hover:bg-red-700 hover:text-white   rounded-md text-red-600  hover:shadow-lg font-semibold"

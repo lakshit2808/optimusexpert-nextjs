@@ -58,7 +58,7 @@ export const NavBar = () => {
                 <a href="https://www.instagram.com/optimusexpert/" target="_blank" rel="noreferrer"><Image src={navIcon4} alt="" /></a>
               </div>
               <Link href='#connect'>
-                <button className="vvd"><span>Let’s Connect</span></button>
+                <button className="vvd vvd-mobile"><span>Let’s Connect</span></button>
               </Link>
             </span>
           </Navbar.Collapse>

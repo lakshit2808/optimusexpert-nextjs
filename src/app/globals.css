@@ -930,3 +930,52 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     text-align: center;
   }
 }
+
+
+@media only screen and (max-width: 600px) {
+  #info-popup{
+
+    position: unset;
+    width: 22rem;
+  }
+  @layer utilities {
+  .info-box-button{
+    font-size: 0.8rem;
+    top: 0.7rem
+  }
+
+  .animated-astronaut{
+    position: relative;
+    top: 6rem;
+  }
+  .service-box{
+    width: 21rem;
+  }
+
+  .banner-up{
+
+    position: relative;
+    bottom: 7rem;
+  }
+}
+  .tagline{
+
+    position: relative;
+    left: 2.1rem;
+  }
+  #connect-redirect{
+    position: relative;
+    top: 3rem;
+  }
+
+  .social-icon a
+  {
+    width: 31px;
+    height: 31px;
+  }
+
+  nav.navbar a.navbar-brand {
+    width: 25%;
+  }
+
+}
