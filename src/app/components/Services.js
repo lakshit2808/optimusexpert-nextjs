@@ -1,3 +1,4 @@
+'use client'
 import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -7,7 +8,6 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import Image from "next/image";
 import React, { useState } from "react";
-import Link from "next/link";
 
 const ServiceCard = ({ index, title, icon }) => (
   
@@ -54,7 +54,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-We provide the Full Stack Application Solution for you. Our developers have developed countless projects successfully and have extensive knowledge of HTML5, CSS Frameworks(Tailwind, BootStrap), JS Frameworks (React JS, Express, NextJs,Angular), Python (Django, Flask, FastAPI), Java, and Node JS for the front end. For the creation of cross-platform mobile apps, React Native is our primary coding language. We operate with most non-relational databases like Firebase, MongoDB and DynamoDB as well as traditional ones like PostgreSQL, MSSQL, etc. Our team has experience with Devops using Docker, Nginx, and other tools on AWS, Google Cloud, etc.
+      We provide the Full Stack Application Solution for you. Our developers have developed countless projects successfully and have extensive knowledge of HTML5, CSS Frameworks(Tailwind, BootStrap), JS Frameworks (React JS, Express, NextJs,Angular), Python (Django, Flask, FastAPI), Java, and Node JS for the front end. For the creation of cross-platform mobile apps, React Native is our primary coding language. We operate with most non-relational databases like Firebase, MongoDB and DynamoDB as well as traditional ones like PostgreSQL, MSSQL, etc. Our team has experience with Devops using Docker, Nginx, and other tools on AWS, Google Cloud, etc.
       </motion.p>
 
       {Popup ? (
