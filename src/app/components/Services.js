@@ -2,9 +2,9 @@
 import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
 
-import { styles } from "../style";
+import { styles } from "../styles/style";
 import { services } from "../constants";
-import { SectionWrapper } from "../hoc";
+import { SectionWrapper } from "../utils/hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";

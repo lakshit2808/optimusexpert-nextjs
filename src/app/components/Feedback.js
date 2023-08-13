@@ -2,8 +2,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import { styles } from "../style";
-import { SectionWrapper } from "../hoc";
+import { styles } from "../styles/style";
+import { SectionWrapper } from "../utils/hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 import Image from "next/image";
