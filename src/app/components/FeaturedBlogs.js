@@ -1,8 +1,10 @@
-import React from "react";
+'use client'
+import React, {useEffect, useState} from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+
 import { motion } from "framer-motion";
 
 import "react-vertical-timeline-component/style.min.css";
@@ -14,6 +16,7 @@ import { textVariant } from "../utils/motion";
 import Image from "next/image";
 
 const FeaturedBlogs = ({ experience }) => {
+
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -61,13 +64,13 @@ const Experience = () => {
   return (
     <div id="blog">
       <div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
-        Unleashing the Power of Quantitative Strategies
-        </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
-          Quantitative Insights
-        </h2>
-      </div>
+      <p className={`${styles.sectionSubText} text-center`}>
+      Unleashing the Power of Quantitative Strategies
+      </p>
+      <h2 className={`${styles.sectionHeadText} text-center`}>
+        Quantitative Insights
+      </h2>
+      </div>  
 
       <div className='mt-20 flex flex-col'>
         <VerticalTimeline>

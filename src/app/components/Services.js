@@ -13,7 +13,7 @@ const ServiceCard = ({ index, title, icon }) => (
   
 
   <Tilt className='xs:w-[250px] w-full service-box'>
-    <motion.div
+    <div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
     >
@@ -35,7 +35,7 @@ const ServiceCard = ({ index, title, icon }) => (
           {title}
         </h3>
       </div>
-    </motion.div>
+    </div>
   </Tilt>
 );
 
@@ -45,17 +45,17 @@ const About = () => {
 
   return (
     <div id="services">
-      <motion.div variants={textVariant()}>
+      <div variants={textVariant()}>
         <p className={styles.sectionSubText}>Services</p>
         <h2 className={styles.sectionHeadText}>Tech Stack & Technology we use.</h2>
-      </motion.div>
+      </div>
 
-      <motion.p
+      <p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
       We provide the Full Stack Application Solution for you. Our developers have developed countless projects successfully and have extensive knowledge of HTML5, CSS Frameworks(Tailwind, BootStrap), JS Frameworks (React JS, Express, NextJs,Angular), Python (Django, Flask, FastAPI), Java, and Node JS for the front end. For the creation of cross-platform mobile apps, React Native is our primary coding language. We operate with most non-relational databases like Firebase, MongoDB and DynamoDB as well as traditional ones like PostgreSQL, MSSQL, etc. Our team has experience with Devops using Docker, Nginx, and other tools on AWS, Google Cloud, etc.
-      </motion.p>
+      </p>
 
       {Popup ? (
       <div id="info-popup" className="mt-10 flex justify-center relative left-[18rem] items-center flex-col w-1/2 rounded-lg shadow-xl h-auto p-2 border-2">
