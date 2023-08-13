@@ -977,5 +977,44 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   nav.navbar a.navbar-brand {
     width: 25%;
   }
+  #insights-title{
+    font-size: 1rem;
+  }
+  #insights-readmore{
+    font-size: 0.7rem;
+  }
 
+  #banner-info{
+    font-size: 0.9rem;
+  }
+  #insights-bulletpts{
+    position: relative;
+    bottom: 2rem;
+  }
+  #project-info{
+    width: 90%;
+  }
+  #projects-tabs-tab-first{
+    font-size: .5rem;
+  }
+  #projects-tabs-tab-second{
+    font-size: .54rem;
+  }
+  #projects-tabs-tab-third{
+    font-size: 1rem;
+  }
+  .proj-imgbx{
+    margin: 1rem;
+  }
+  .form{
+    margin: 1.5rem;
+  }
+  #newsletter-text{
+    width: 21rem;
+    right: 6rem;
+    bottom: 2rem;
+  }
+  .new-email-bx{
+    margin-left: 1.5rem;
+  }
 }

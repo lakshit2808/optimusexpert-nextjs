@@ -37,16 +37,16 @@ const FeaturedBlogs = ({ experience }) => {
       }
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+        <h3 id="insights-title" className='text-white text-[24px] font-bold'>{experience.title}</h3>
         <p
           className='text-secondary text-[16px] font-semibold'
           style={{ margin: 0 }}
         >
-          <a href={experience.url} target="_blank" className="text-[##00008B] no-underline">Read More</a>
+          <a id="insights-readmore" href={experience.url} target="_blank" className="text-[##00008B] no-underline">Read More</a>
         </p>
       </div>
 
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
+      <ul id="insights-bulletpts" className='mt-5 list-disc ml-5 space-y-2'>
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
