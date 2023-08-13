@@ -7,11 +7,9 @@ import { Footer } from './components/Footer'
 import React, { useEffect } from 'react'
 import Services from './components/Services'
 import FeaturedBlogs from './components/FeaturedBlogs'
-// import Feedback from './components/Feedback'
+
 
 export default function Home() {
-
-  // await new Promise(resolve => setTimeout(resolve , 3000) ); // for splash screen
 
 useEffect(() => {
   const script = document.createElement('script');
