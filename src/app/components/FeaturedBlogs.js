@@ -60,14 +60,14 @@ const FeaturedBlogs = ({ experience }) => {
 const Experience = () => {
   return (
     <div id="blog">
-      <motion.div variants={textVariant()}>
+      <div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
         Unleashing the Power of Quantitative Strategies
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
           Quantitative Insights
         </h2>
-      </motion.div>
+      </div>
 
       <div className='mt-20 flex flex-col'>
         <VerticalTimeline>
