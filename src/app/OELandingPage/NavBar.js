@@ -32,6 +32,13 @@ export const NavBar = () => {
     setActiveLink(value);
   }
 
+  const handleClick = (href, e) => {
+    e.preventDefault(); // Prevent default behavior
+    onUpdateActiveLink('home')
+    router.push(href); // Use Next.js router to navigate
+  };
+
+
   return (
 
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
@@ -44,13 +51,13 @@ export const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Link href="/#home" className={activeLink === 'home' ? 'active product-link' : 'product-link'} onClick={() => onUpdateActiveLink('home')}>Home</Link>
-              <Link href="/#services" className={activeLink === 'skills' ? 'active product-link' : 'product-link'} onClick={() => onUpdateActiveLink('skills')}>Services</Link>
-              <Link href='/#blog' className={activeLink === 'blog' ? 'active product-link' : 'product-link'} onClick={() => onUpdateActiveLink('blog')}>Insights</Link>
-              <Link href='/products' className={activeLink === 'products' ? 'active product-link' : 'product-link'} onClick={() => onUpdateActiveLink('products')}>Products</Link>
+              <Link href="/#home" className={activeLink === 'home' ? 'active product-link' : 'product-link'} onClick={(e) => handleClick('/#home', e)}   >Home</Link>
+              <Link href="/#services" className={activeLink === 'skills' ? 'active product-link' : 'product-link'} onClick={(e) => handleClick('/#services', e)}>Services</Link>
+              <Link href='/#blog' className={activeLink === 'blog' ? 'active product-link' : 'product-link'} onClick={(e) => handleClick('/#blog', e)}>Insights</Link>
+              <Link href='/products' className={activeLink === 'products' ? 'active product-link' : 'product-link'} onClick={(e) => handleClick('products', e)}>Products</Link>
 
               {/* <Nav.Link href='#testimonials' className={activeLink === 'testimonials' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('testimonials')}>Testimonials</Nav.Link> */}
-              <Link href="/#project" className={activeLink === 'projects' ? 'active product-link' : 'product-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Link>
+              <Link href="/#project" className={activeLink === 'projects' ? 'active product-link' : 'product-link'} onClick={(e) => handleClick('projects', e)}>Projects</Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">

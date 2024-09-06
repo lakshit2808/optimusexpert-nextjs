@@ -8,7 +8,7 @@ export const productdata = [
     title: "Orange",
     img: image, // Adjust path as needed
     price: "$5.50",
-    page_id: "hello",
+    page_id: "1",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi culpa tempore, quod commodi quis iste vel quia beatae molestiae accusantium quo qui id ad eum sunt in itaque quas expedita.",
     imageGallery: [image, image2, image3, image4],
         tabs: [

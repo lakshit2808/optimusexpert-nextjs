@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { productdata } from '../products/productdata';
+import ReactMarkdown from 'react-markdown';
+
+
 const Tabs = ({ params }) => {
   // Find the selected product based on the productId
   const product = productdata.find(p => p.page_id === params.productId);
@@ -32,7 +35,8 @@ const Tabs = ({ params }) => {
         {product.tabs.map((tab) =>
           activeTab === tab.id ? (
             <div key={tab.id} className="text-white-800">
-              {tab.content}
+              <ReactMarkdown>{tab.content}</ReactMarkdown>
+
             </div>
           ) : null
         )}
