@@ -51,10 +51,10 @@ export const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Link href="/#home" className={activeLink === 'home' ? 'active product-link' : 'product-link'} onClick={(e) => handleClick('/#home', e)}   >Home</Link>
-              <Link href="/#services" className={activeLink === 'skills' ? 'active product-link' : 'product-link'} onClick={(e) => handleClick('/#services', e)}>Services</Link>
-              <Link href='/#blog' className={activeLink === 'blog' ? 'active product-link' : 'product-link'} onClick={(e) => handleClick('/#blog', e)}>Insights</Link>
-              <Link href='/products' className={activeLink === 'products' ? 'active product-link' : 'product-link'} onClick={(e) => handleClick('products', e)}>Products</Link>
+              <a href="/#home" className={activeLink === 'home' ? 'active product-link' : 'product-link'} onClick={(e) => handleClick('/#home', e)}   >Home</a>
+              <a href="/#services" className={activeLink === 'skills' ? 'active product-link' : 'product-link'} onClick={(e) => handleClick('/#services', e)}>Services</a>
+              <a href='/#blog' className={activeLink === 'blog' ? 'active product-link' : 'product-link'} onClick={(e) => handleClick('/#blog', e)}>Insights</a>
+              <a href='/products' className={activeLink === 'products' ? 'active product-link' : 'product-link'} onClick={(e) => handleClick('products', e)}>Products</a>
 
               {/* <Nav.Link href='#testimonials' className={activeLink === 'testimonials' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('testimonials')}>Testimonials</Nav.Link> */}
               <Link href="/#project" className={activeLink === 'projects' ? 'active product-link' : 'product-link'} onClick={(e) => handleClick('projects', e)}>Projects</Link>
