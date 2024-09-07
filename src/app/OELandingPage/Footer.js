@@ -23,9 +23,9 @@ export const Footer = () => {
               <a href="https://youtube.com/codewithlakshit" target="_blank" rel="noreferrer"><Image src={navIcon3} alt="Icon" /></a>
             </div>
             <p>Copyright 2022. All Rights Reserved</p>
-            <Link href="/privacy-policy" className="text-indigo-300 hover:text-indigo-100 mx-2">Privacy Policy</Link>
-        <Link href="/terms-conditions" className="text-indigo-300 hover:text-indigo-100 mx-2">Terms & Conditions</Link>
-        <Link href="/refund-policy" className="text-indigo-300 hover:text-indigo-100 mx-2">Refund Policy</Link>
+            <Link rel="preload" as="/privacy-policy" href="/privacy-policy" className="text-indigo-300 hover:text-indigo-100 mx-2">Privacy Policy</Link>
+        <Link rel="preload" as="/terms-conditions" href="/terms-conditions" className="text-indigo-300 hover:text-indigo-100 mx-2">Terms & Conditions</Link>
+        <Link rel="preload" as="/refund-policy" href="/refund-policy" className="text-indigo-300 hover:text-indigo-100 mx-2">Refund Policy</Link>
 
           </Col>
         </Row>

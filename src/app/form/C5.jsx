@@ -142,7 +142,7 @@ const ContactForm = ({ setCurrentNo, setContactInfo, setFormComplete, progressBa
 
         <div className="text-sm text-gray-500 mb-4">
           By completing the form, you agree to Optimus Expert&apos;s{" "}
-          <Link rel="preload" as="document" href="/terms" className="text-blue-600">
+          <Link rel="preload" as="document" href="/terms-conditions" className="text-blue-600">
             Terms of Service
           </Link>
           ,{" "}
