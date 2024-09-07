@@ -11,6 +11,7 @@ const ProductDetail = ({ params }) => {
   const [selectedImage, setSelectedImage] = useState(product.img);
   const [country, setCountry] = useState('');
   const [adjustedPrice, setAdjustedPrice] = useState(product.price);
+  const USD_INR = 80
 
   useEffect(() => {
     const fetchCountry = async () => {
@@ -22,7 +23,7 @@ const ProductDetail = ({ params }) => {
 
         // Adjust price based on country
         if (userCountry !== 'India') {
-          const priceInUsd = product.price / 82; // Conversion rate for INR to USD
+          const priceInUsd = product.price / USD_INR; // Conversion rate for INR to USD
           setAdjustedPrice(Math.ceil(priceInUsd)); // Round up to the nearest integer
         } else {
           setAdjustedPrice(product.price);
@@ -99,7 +100,7 @@ const ProductDetail = ({ params }) => {
                 />
                 <h3 className="text-xl font-semibold mb-2 text-black-100">{item.title}</h3>
                 <p className="text-gray-700 mb-4">
-                  {country && country !== 'India' ? `USD ${Math.ceil(item.price / 82)}` : `INR ${item.price}`}
+                  {country && country !== 'India' ? `USD ${Math.ceil(item.price / USD_INR)}` : `INR ${item.price}`}
                 </p>
                 <p className="text-gray-700 mb-4">{item.description}</p>
               </Link>
