@@ -5,6 +5,7 @@ import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/github.svg";
 import navIcon3 from "../assets/img/youtube.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -22,6 +23,10 @@ export const Footer = () => {
               <a href="https://youtube.com/codewithlakshit" target="_blank" rel="noreferrer"><Image src={navIcon3} alt="Icon" /></a>
             </div>
             <p>Copyright 2022. All Rights Reserved</p>
+            <Link href="/privacy-policy" className="text-indigo-300 hover:text-indigo-100 mx-2">Privacy Policy</Link>
+        <Link href="/terms-conditions" className="text-indigo-300 hover:text-indigo-100 mx-2">Terms & Conditions</Link>
+        <Link href="/refund-policy" className="text-indigo-300 hover:text-indigo-100 mx-2">Refund Policy</Link>
+
           </Col>
         </Row>
       </Container>

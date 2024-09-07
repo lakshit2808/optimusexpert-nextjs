@@ -37,6 +37,7 @@ useEffect(() => {
     <Projects/>
     <Contact/>
     <Footer/>
+
     <Script strategy='afterInteractive' src="https://www.googletagmanager.com/gtag/js?id=G-Q7RFLX9WDB"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7RFLX9WDB"></script>
     <Script id='google-analytics' strategy='afterInteractive'>
