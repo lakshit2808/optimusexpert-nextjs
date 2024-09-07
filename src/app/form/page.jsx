@@ -5,6 +5,8 @@ import C3 from "./C3";
 import C4 from "./C4";
 import C5 from "./C5";
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
+
 
 const Form = () => {
   const [currentNo, setCurrentNo] = useState(1);
@@ -19,6 +21,7 @@ const Form = () => {
     company_name: "",
     message: "",
   };
+
 
   const Modal = ({ isVisible, onClose, children }) => {
     if (!isVisible) return null;
@@ -153,9 +156,11 @@ const Form = () => {
         className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
         aria-label="Close"
       >
+        <a rel="preload" as="document" href="/">
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
+        </a>
       </button>
       <div className="flex items-center">
         <svg className="flex-shrink-0 w-6 h-6 text-green-500 mr-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -168,7 +173,6 @@ const Form = () => {
       </div>
     </div>
   );
-  
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-gray-100">
