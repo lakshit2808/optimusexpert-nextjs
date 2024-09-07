@@ -7,7 +7,7 @@ export const productdata = [
   {
     title: "Orange",
     img: image, // Adjust path as needed
-    price: "$5.50",
+    price:5000,
     page_id: "1",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi culpa tempore, quod commodi quis iste vel quia beatae molestiae accusantium quo qui id ad eum sunt in itaque quas expedita.",
     imageGallery: [image, image2, image3, image4],
@@ -16,12 +16,13 @@ export const productdata = [
       { id: 2, label: "How to Guide", content: "Content for How to Guide for Orange." },
       { id: 3, label: "FAQ", content: "Content for FAQ about Orange." },
     ],
+    REDIRECT_URL: "https://nesin.io/blog/integrate-razorpay-with-nextjs",
 
   },
   {
     title: "Tangerine",
     img: image, // Adjust path as needed
-    price: "$3.00",
+    price:200,
     page_id: "2",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi culpa tempore, quod commodi quis iste vel quia beatae molestiae accusantium quo qui id ad eum sunt in itaque quas expedita.",
     imageGallery: [image, image2, image3, image4],
@@ -30,12 +31,13 @@ export const productdata = [
       { id: 2, label: "How to Guide", content: "Content for How to Guide for Orange." },
       { id: 3, label: "FAQ", content: "Content for FAQ about Orange." },
     ],
+    REDIRECT_URL: "https://nesin.io/blog/integrate-razorpay-with-nextjs",
 
   },
   {
     title: "Raspberry",
     img: image, // Adjust path as needed
-    price: "$10.00",
+    price: 200,
     page_id: "3",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi culpa tempore, quod commodi quis iste vel quia beatae molestiae accusantium quo qui id ad eum sunt in itaque quas expedita.",
     imageGallery: [image, image2, image3, image4],
@@ -44,12 +46,13 @@ export const productdata = [
       { id: 2, label: "How to Guide", content: "Content for How to Guide for Orange." },
       { id: 3, label: "FAQ", content: "Content for FAQ about Orange." },
     ],
+    REDIRECT_URL: "https://nesin.io/blog/integrate-razorpay-with-nextjs",
 
   },
   {
     title: "Lemon",
     img: image, // Adjust path as needed
-    price: "$5.30",
+    price:200,
     page_id: "4",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi culpa tempore, quod commodi quis iste vel quia beatae molestiae accusantium quo qui id ad eum sunt in itaque quas expedita.",
     imageGallery: [image, image2, image3, image4],
@@ -58,12 +61,13 @@ export const productdata = [
       { id: 2, label: "How to Guide", content: "Content for How to Guide for Orange." },
       { id: 3, label: "FAQ", content: "Content for FAQ about Orange." },
     ],
+    REDIRECT_URL: "https://nesin.io/blog/integrate-razorpay-with-nextjs",
 
   },
   {
     title: "Avocado",
     img: image, // Adjust path as needed
-    price: "$15.70",
+    price: 200,
     page_id: "5",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi culpa tempore, quod commodi quis iste vel quia beatae molestiae accusantium quo qui id ad eum sunt in itaque quas expedita.",
     imageGallery: [image, image2, image3, image4],
@@ -72,12 +76,13 @@ export const productdata = [
       { id: 2, label: "How to Guide", content: "Content for How to Guide for Orange." },
       { id: 3, label: "FAQ", content: "Content for FAQ about Orange." },
     ],
+    REDIRECT_URL: "https://nesin.io/blog/integrate-razorpay-with-nextjs",
 
   },
   {
     title: "Lemon 2",
     img: image, // Adjust path as needed
-    price: "$8.00",
+    price:200,
     page_id: "6",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi culpa tempore, quod commodi quis iste vel quia beatae molestiae accusantium quo qui id ad eum sunt in itaque quas expedita.",
     imageGallery: [image, image2, image3, image4],
@@ -86,12 +91,13 @@ export const productdata = [
       { id: 2, label: "How to Guide", content: "Content for How to Guide for Orange." },
       { id: 3, label: "FAQ", content: "Content for FAQ about Orange." },
     ],
+    REDIRECT_URL: "https://nesin.io/blog/integrate-razorpay-with-nextjs",
 
   },
   {
     title: "Banana",
     img: image, // Adjust path as needed
-    price: "$7.50",
+    price:200,
     page_id: "7",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi culpa tempore, quod commodi quis iste vel quia beatae molestiae accusantium quo qui id ad eum sunt in itaque quas expedita.",
     imageGallery: [image, image2, image3, image4],
@@ -100,12 +106,13 @@ export const productdata = [
       { id: 2, label: "How to Guide", content: "Content for How to Guide for Orange." },
       { id: 3, label: "FAQ", content: "Content for FAQ about Orange." },
     ],
+    REDIRECT_URL: "https://nesin.io/blog/integrate-razorpay-with-nextjs",
 
   },
   {
     title: "Watermelon",
     img: image, // Adjust path as needed
-    price: "$12.20",
+    price: 200,
     page_id: "8",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi culpa tempore, quod commodi quis iste vel quia beatae molestiae accusantium quo qui id ad eum sunt in itaque quas expedita.",
     imageGallery: [image, image2, image3, image4],
@@ -114,6 +121,7 @@ export const productdata = [
       { id: 2, label: "How to Guide", content: "Content for How to Guide for Orange." },
       { id: 3, label: "FAQ", content: "Content for FAQ about Orange." },
     ],
+    REDIRECT_URL: "https://nesin.io/blog/integrate-razorpay-with-nextjs",
 
   }
 ];
