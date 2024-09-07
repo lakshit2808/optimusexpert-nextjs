@@ -57,7 +57,7 @@ const UnMotionComponent = () =>{
 
       {Popup ? (
       <div id="info-popup" className="mt-10 flex justify-center relative left-[18rem] items-center flex-col w-1/2 rounded-lg shadow-xl h-auto p-2 border-2">
-                <h1 className="text-base mt-2 font-semibold text-center mx-4 text-lg text-white">
+                <h1 className="text-base mt-2 font-semibold text-center mx-4 text-white">
                     {services[InfoIndex].title}
           </h1>
         <h2 className="text-base mt-2 text-gray-400 font-semibold text-center mx-4">
@@ -137,7 +137,7 @@ const MotionComponent = () =>{
 
       {Popup ? (
       <div id="info-popup" className="mt-10 flex justify-center relative left-[18rem] items-center flex-col w-1/2 rounded-lg shadow-xl h-auto p-2 border-2">
-                <h1 className="text-base mt-2 font-semibold text-center mx-4 text-lg text-white">
+                <h1 className="text-base mt-2 font-semibold text-center mx-4 text-white">
                     {services[InfoIndex].title}
           </h1>
         <h2 className="text-base mt-2 text-gray-400 font-semibold text-center mx-4">

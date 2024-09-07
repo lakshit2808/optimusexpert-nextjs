@@ -42,7 +42,7 @@ const FeaturedBlogs = ({ experience }) => {
           className='text-secondary text-[16px] font-semibold'
           style={{ margin: 0 }}
         >
-          <a id="insights-readmore" href={experience.url} target="_blank" className="text-[##00008B] no-underline">Read More</a>
+          <a rel="preload" as="document"  id="insights-readmore" href={experience.url} target="_blank" className="text-[##00008B] no-underline">Read More</a>
         </p>
       </div>
 
