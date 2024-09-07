@@ -48,13 +48,13 @@ export const NavBar = () => {
               {/* <Link href="/#home" className={activeLink === 'home' ? 'active product-link' : 'product-link'} onClick={(e) => onUpdateActiveLink('home')}   >Home</Link>
               <Link href="/#services" className={activeLink === 'services' ? 'active product-link' : 'product-link'} onClick={(e) => onUpdateActiveLink('services')}>Services</Link>
               <Link href='/#blog' className={activeLink === 'blog' ? 'active product-link' : 'product-link'} onClick={(e) => onUpdateActiveLink('blog')}>Insights</Link> */}
-              <Nav.Link rel="preload" as="document" href="/#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-              <Nav.Link rel="preload" as="document" href="/#services" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Services</Nav.Link>
-              <Nav.Link rel="preload" as="document" href='/#blog' className={activeLink === 'blog' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('blog')}>Insights</Nav.Link>             
+              <a rel="preload" as="/#home" href="/#home" className={activeLink === 'home' ? 'active product-link' : 'product-link'} onClick={() => onUpdateActiveLink('home')}>Home</a>
+              <a rel="preload" as="/#services" href="/#services" className={activeLink === 'skills' ? 'active product-link' : 'product-link'} onClick={() => onUpdateActiveLink('skills')}>Services</a>
+              <a rel="preload" as="/#blog" href='/#blog' className={activeLink === 'blog' ? 'active product-link' : 'product-link'} onClick={() => onUpdateActiveLink('blog')}>Insights</a>             
               <a rel="preload" as="document" href='/products' className={activeLink === 'products' ? 'active product-link' : 'product-link'} onClick={(e) => onUpdateActiveLink('products')}>Products</a>
 
               {/* <Nav.Link href='#testimonials' className={activeLink === 'testimonials' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('testimonials')}>Testimonials</Nav.Link> */}
-              <Link rel="preload" as="document" href="/#project" className={activeLink === 'projects' ? 'active product-link' : 'product-link'} onClick={(e) => onUpdateActiveLink('projects')}>Projects</Link>
+              <Link rel="preload" as="/#project" href="/#project" className={activeLink === 'projects' ? 'active product-link' : 'product-link'} onClick={(e) => onUpdateActiveLink('projects')}>Projects</Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">

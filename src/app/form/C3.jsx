@@ -6,7 +6,7 @@ const ProjectTypeForm = ({setCurrentNo, selectedType, setSelectedType, progressB
   const projectTypes = [
     'New idea or project',
     'Existing project that needs more resources',
-    'None of the above, I\'m just looking to learn more about Toptal'
+    'None of the above, I\'m just looking to learn more about Optimus Expert'
   ];
 
   return (
