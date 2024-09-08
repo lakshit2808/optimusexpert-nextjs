@@ -15,7 +15,19 @@ export const Footer = () => {
           <MailchimpForm />
           <Col size={12} sm={6} id ='footer-image'>
             <Image src={logo} alt="Logo" />
+            <div className=" text-sm text-white-700">
+        You can also contact us directly at{" "}
+        <a href="mailto:hello@optimusexpert.com" className="text-blue-500">
+          hello@optimusexpert.com
+        </a>{" "}
+        or call us at{" "}
+        <a href="tel:+919919910693" className="text-blue-500">
+          +919919910693
+        </a>
+        .
+      </div>
           </Col>
+          
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
               <a href="https://www.linkedin.com/company/optimusexpert" target="_blank" rel="noreferrer"><Image src={navIcon1} alt="Icon" /></a>
