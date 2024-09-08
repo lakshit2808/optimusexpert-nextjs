@@ -24,7 +24,7 @@ export const Footer = () => {
   <a href="tel:+919919910693" className="text-blue-500">
     +919919910693
   </a>
-  . Our address is VPO Kunjpura, Vil: Kunjpura, Teh: Karnal, Distt: Karnal,
+  .<br/> Our address is VPO Kunjpura, Vil: Kunjpura, Teh: Karnal, Distt: Karnal,
   State: Haryana, Pin Code: 132022.
 </div>
 
