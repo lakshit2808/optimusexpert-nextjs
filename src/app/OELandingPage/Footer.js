@@ -15,17 +15,19 @@ export const Footer = () => {
           <MailchimpForm />
           <Col size={12} sm={6} id ='footer-image'>
             <Image src={logo} alt="Logo" />
-            <div className=" text-sm text-white-700">
-        You can also contact us directly at{" "}
-        <a href="mailto:hello@optimusexpert.com" className="text-blue-500">
-          hello@optimusexpert.com
-        </a>{" "}
-        or call us at{" "}
-        <a href="tel:+919919910693" className="text-blue-500">
-          +919919910693
-        </a>
-        .
-      </div>
+            <div className="text-sm text-white-700">
+  You can also contact us directly at{" "}
+  <a href="mailto:hello@optimusexpert.com" className="text-blue-500">
+    hello@optimusexpert.com
+  </a>{" "}
+  or call us at{" "}
+  <a href="tel:+919919910693" className="text-blue-500">
+    +919919910693
+  </a>
+  . Our address is VPO Kunjpura, Vil: Kunjpura, Teh: Karnal, Distt: Karnal,
+  State: Haryana, Pin Code: 132022.
+</div>
+
           </Col>
           
           <Col size={12} sm={6} className="text-center text-sm-end">
