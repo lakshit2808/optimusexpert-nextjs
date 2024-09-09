@@ -47,7 +47,7 @@ const ProductDetail = ({ params }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Product Image */}
         <div className="w-full">
-          <div className="relative w-full h-80">
+          <div className="relative w-full h-70">
             <Image
               src={selectedImage}
               alt={product.title}

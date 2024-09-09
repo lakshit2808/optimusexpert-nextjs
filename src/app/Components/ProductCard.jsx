@@ -10,7 +10,6 @@ export default function App() {
   const [country, setCountry] = useState('');
   const USD_INR = 80
 
-
   useEffect(() => {
     const fetchCountry = async () => {
       try {
