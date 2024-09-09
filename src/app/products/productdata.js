@@ -8,7 +8,7 @@ export const productdata = [
     title: "SOURCE CODE: Python Backtesting of a Stock Options Strategy: Real Results Revealed",
     img: sos_img_2, // Adjust path as needed
     price:99,
-    page_id: "1",
+    page_id: "stocks-options-selling-strategy",
     description:"Unlock the power of stock options selling with our Python backtesting code! Perfect for finance students and traders, this tool helps you quantify and improve your trading strategies. Download now to get precise, actionable insights and revolutionize your stock market investments.",
      imageGallery: [ sos_img_2, sos_img_3, sos_img_4],
         tabs: [
