@@ -1,4 +1,3 @@
-import sos_img_1 from "./images/stock_options_selling/1.png"
 import sos_img_2 from "./images/stock_options_selling/2.png"
 import sos_img_3 from "./images/stock_options_selling/3.png"
 import sos_img_4 from "./images/stock_options_selling/4.png"

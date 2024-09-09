@@ -11,7 +11,7 @@ const ProductDetail = ({ params }) => {
   const [selectedImage, setSelectedImage] = useState(product.img);
   const [country, setCountry] = useState('');
   const [adjustedPrice, setAdjustedPrice] = useState(product.price);
-  const USD_INR = 80
+  const USD_INR = 80;
 
   useEffect(() => {
     const fetchCountry = async () => {
@@ -23,23 +23,25 @@ const ProductDetail = ({ params }) => {
 
         // Adjust price based on country
         if (userCountry !== 'India') {
-          const priceInUsd = product.price / USD_INR; // Conversion rate for INR to USD
-          setAdjustedPrice(Math.ceil(priceInUsd)); // Round up to the nearest integer
+          const priceInUsd = product.price / USD_INR;
+          setAdjustedPrice(Math.ceil(priceInUsd));
         } else {
           setAdjustedPrice(product.price);
         }
       } catch (error) {
         console.error('Error fetching country:', error);
+        setCountry('India');
+        setAdjustedPrice(product.price);
       }
     };
 
     fetchCountry();
-  }, [product.price]);
+  }, [product.price, product]);
 
   const CURRENCY = country && country !== 'India' ? 'USD' : 'INR';
-  
+
   if (!product) {
-    return <div>Product not found</div>; // Handle case where product is not found
+    return <div>Product not found</div>;
   }
 
   return (
@@ -52,6 +54,10 @@ const ProductDetail = ({ params }) => {
               src={selectedImage}
               alt={product.title}
               className="rounded-lg"
+              layout="responsive"
+              width={600}
+              height={400}
+              priority
             />
           </div>
 
@@ -66,6 +72,7 @@ const ProductDetail = ({ params }) => {
                   className={`rounded-lg cursor-pointer ${
                     selectedImage === img ? 'border-2 border-blue-500' : ''
                   }`}
+                  loading="lazy"
                 />
               </button>
             ))}
@@ -75,7 +82,9 @@ const ProductDetail = ({ params }) => {
         <div className="w-full">
           <h1 className="text-4xl font-bold mb-4">{product.title}</h1>
           <p className="text-lg text-white-100 mb-6">{product.description}</p>
-          <p className="text-2xl font-semibold mb-4 text-green-600">{CURRENCY} {adjustedPrice}</p>
+          <p className="text-2xl font-semibold mb-4 text-green-600">
+            {CURRENCY} {adjustedPrice}
+          </p>
 
           {/* Buy Button */}
           <BuyModal AMOUNT={adjustedPrice} REDIRECT_URL={product.REDIRECT_URL} CURRENCY={CURRENCY} />
@@ -97,6 +106,7 @@ const ProductDetail = ({ params }) => {
                   width={500}
                   height={300}
                   className="rounded-lg mb-4"
+                  layout="responsive"
                 />
                 <h3 className="text-xl font-semibold mb-2 text-black-100">{item.title}</h3>
                 <p className="text-gray-700 mb-4">
