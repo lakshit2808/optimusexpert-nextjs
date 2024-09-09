@@ -63,9 +63,9 @@ export const NavBar = () => {
                 <a href="https://youtube.com/codewithlakshit" target="_blank" rel="noreferrer"><Image src={navIcon3} alt="" /></a>
                 <a href="https://www.instagram.com/optimusexpert/" target="_blank" rel="noreferrer"><Image src={navIcon4} alt="" /></a>
               </div>
-              <Link href='/form'>
+              <a rel="preload" as="document" href='/form'>
                 <button className="vvd vvd-mobile"><span>Let’s Connect</span></button>
-              </Link>
+              </a>
             </span>
           </Navbar.Collapse>
         </Container>
