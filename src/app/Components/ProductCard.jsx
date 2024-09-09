@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 export default function App() {
   const list = productdata;
   const [country, setCountry] = useState('');
-  const USD_INR = 80
+  const USD_INR = 80;
 
   useEffect(() => {
     const fetchCountry = async () => {
@@ -29,7 +29,8 @@ export default function App() {
 
   return (
     <div className="p-4 sm:p-6 lg:p-8 mt-10">
-      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
+      <h1 className="text-2xl font-bold mb-6 text-center">Products</h1> {/* Added Heading Here */}
+      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {list.map((item, index) => {
           const priceInUsd = isNotIndia ? (item.price / USD_INR) : item.price;
           const adjustedPrice = Math.ceil(priceInUsd); // Round up to the nearest integer
