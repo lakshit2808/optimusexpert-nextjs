@@ -49,11 +49,28 @@ const UnMotionComponent = () =>{
       </div>
 
       <p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
-      We provide the Full Stack Application Solution for you. Our developers have developed countless projects successfully and have extensive knowledge of HTML5, CSS Frameworks(Tailwind, BootStrap), JS Frameworks (React JS, Express, NextJs,Angular), Python (Django, Flask, FastAPI), Java, and Node JS for the front end. For the creation of cross-platform mobile apps, React Native is our primary coding language. We operate with most non-relational databases like Firebase, MongoDB and DynamoDB as well as traditional ones like PostgreSQL, MSSQL, etc. Our team has experience with Devops using Docker, Nginx, and other tools on AWS, Google Cloud, etc.
-      </p>
+  variants={fadeIn("", "", 0.1, 1)}
+  className='mt-4 text-secondary text-[17px] max-w-full leading-[30px]'
+>
+  At the very center of our business lies the powerful, modern technology stack we use to create high-performance SaaS development in generative AI products and automated trading systems. Our tech stack is built to scale, ensure security, and provide an easy interface for integration with other platforms. Here is a glimpse of what we use:
+
+  Programming Languages: Python, JavaScript (Node.js, React) and C++ to develop complex applications, trading algorithms, and data processing systems.
+
+  Cloud Platforms: AWS and Google Cloud are used for hosting, data storage, and deployment of scalable SaaS applications with global availability.
+
+  Machine Learning & AI: TensorFlow, PyTorch, and OpenAI APIs power our AI and deep learning models used in generative AI products and automated trading.
+
+  Data Management: PostgreSQL, MongoDB, Redis ensure well-architected and reliable data storage for highly-available performance-critical applications.
+
+  Backtesting & Quant Dev: Custom backtesting frameworks with libraries such as Pandas, NumPy, backtrader enable efficient simulation and evaluation of trading strategies.
+
+  DevOps & CI/CD: Technologies such as Docker, Kubernetes, Jenkins, and GitLab CI are applied to ensure streamlined deployments and rapid iteration on continuous integration.
+
+  APIs & Automation: Core to a real-time, automated trading experience is the use of RESTful APIs, WebSocket, and third-party integration, including financial data APIs.
+
+  We build innovative, reliable, and scalable solutions tailored to the needs of our clients in the fintech, AI, and quantitative development areas by integrating the most state-of-the-art technologies.
+</p>
+
 
       {Popup ? (
       <div id="info-popup" className="mt-10 flex justify-center relative left-[18rem] items-center flex-col w-1/2 rounded-lg shadow-xl h-auto p-2 border-2">
@@ -66,7 +83,7 @@ const UnMotionComponent = () =>{
           <div className="flex gap-5">
             <a
               className="my-5 w-auto px-8 h-10 bg-blue-600 no-underline text-white rounded-md shadow hover:shadow-lg font-semibold"
-              href="#connect"
+              href="/form"
             >
               <p className="relative top-2 info-box-button">Get in Touch</p>
             </a>
@@ -129,11 +146,28 @@ const MotionComponent = () =>{
       </motion.div>
 
       <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
-      We provide the Full Stack Application Solution for you. Our developers have developed countless projects successfully and have extensive knowledge of HTML5, CSS Frameworks(Tailwind, BootStrap), JS Frameworks (React JS, Express, NextJs,Angular), Python (Django, Flask, FastAPI), Java, and Node JS for the front end. For the creation of cross-platform mobile apps, React Native is our primary coding language. We operate with most non-relational databases like Firebase, MongoDB and DynamoDB as well as traditional ones like PostgreSQL, MSSQL, etc. Our team has experience with Devops using Docker, Nginx, and other tools on AWS, Google Cloud, etc.
-      </motion.p>
+  variants={fadeIn("", "", 0.1, 1)}
+  className='mt-4 text-secondary text-[17px] max-w-full leading-[30px]'
+>
+  At the very center of our business lies the powerful, modern technology stack we use to create high-performance SaaS development in generative AI products and automated trading systems. Our tech stack is built to scale, ensure security, and provide an easy interface for integration with other platforms. Here is a glimpse of what we use:
+
+  Programming Languages: Python, JavaScript (Node.js, React) and C++ to develop complex applications, trading algorithms, and data processing systems.
+
+  Cloud Platforms: AWS and Google Cloud are used for hosting, data storage, and deployment of scalable SaaS applications with global availability.
+
+  Machine Learning & AI: TensorFlow, PyTorch, and OpenAI APIs power our AI and deep learning models used in generative AI products and automated trading.
+
+  Data Management: PostgreSQL, MongoDB, Redis ensure well-architected and reliable data storage for highly-available performance-critical applications.
+
+  Backtesting & Quant Dev: Custom backtesting frameworks with libraries such as Pandas, NumPy, backtrader enable efficient simulation and evaluation of trading strategies.
+
+  DevOps & CI/CD: Technologies such as Docker, Kubernetes, Jenkins, and GitLab CI are applied to ensure streamlined deployments and rapid iteration on continuous integration.
+
+  APIs & Automation: Core to a real-time, automated trading experience is the use of RESTful APIs, WebSocket, and third-party integration, including financial data APIs.
+
+  We build innovative, reliable, and scalable solutions tailored to the needs of our clients in the fintech, AI, and quantitative development areas by integrating the most state-of-the-art technologies.
+</motion.p>
+
 
       {Popup ? (
       <div id="info-popup" className="mt-10 flex justify-center relative left-[18rem] items-center flex-col w-1/2 rounded-lg shadow-xl h-auto p-2 border-2">
