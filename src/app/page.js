@@ -9,6 +9,7 @@ import Services from './OELandingPage/Services'
 import FeaturedBlogs from './OELandingPage/FeaturedBlogs'
 import Script from 'next/script'
 import { NextUIProvider } from '@nextui-org/react'
+import PartnerSlider from './OELandingPage/PartnerSlider'
 
 export default function Home() {
 
@@ -35,6 +36,7 @@ useEffect(() => {
     <FeaturedBlogs/>
     {/* <Feedback/> */}
     <Projects/>
+    <PartnerSlider/>
     <Contact/>
     <Footer/>
 
