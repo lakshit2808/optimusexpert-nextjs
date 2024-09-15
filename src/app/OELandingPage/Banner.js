@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/9027288.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
 import Image from "next/image";
@@ -13,7 +13,7 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(80 - Math.random() * 0.5); 
-  const toRotate = ["Where Numbers meets Precision, Performance, and Profitability."];
+  const toRotate = ["Where Numbers meets Precision, Performance, and Profitability"];
   const period = 500;
 
   useEffect(() => {
@@ -55,7 +55,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to Optimus Expert</span>
-                <h1>{``} <span className="txt-rotate" dataperiod="500" data-rotate='[""]'><span className="wrap">{text}</span></span></h1>
+                <h1>{toRotate}</h1>
                   <p id="banner-info">We are your trusted partner in navigating ongoing transformation across sectors, services, and platforms. At Optimus Expert, we believe in propelling the future of users, corporate entities, and institutions by seamlessly integrating the power of innovation, technology, and information. From New York to Mumbai, London to Canberra, we extend our minds, ideas, and challenge the boundaries of the conservative establishment.
                   <br/><br/>
 Leverage cutting-edge technologies, embrace new opportunities, and experience exponential growth. With Optimus Expert, you gain the agility and durability needed to thrive in today&apos;s rapidly evolving landscape. Let us empower you to embrace transformation, unlock precision, achieve outstanding performance, and drive profitability.</p>
