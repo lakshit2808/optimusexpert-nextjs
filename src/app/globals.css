@@ -962,6 +962,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 @media only screen and (max-width: 600px) {
+  #header-tag
+{
+  font-size: 2.5rem;
+}
   #info-popup{
 
     position: unset;

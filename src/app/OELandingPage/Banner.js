@@ -55,7 +55,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn " : ""}>
                 <span className="tagline mt-2">Welcome to Optimus Expert</span>
-                <h1>{toRotate}</h1>
+                <h1 id="header-tag">{toRotate}</h1>
                   <p id="banner-info">
                   At Optimus Expert, our services are about developing high-tech systems for trading, innovative AI products, and scalable SaaS solutions that help you take your business forward. We build advanced AI-based platforms and systems for totally automated trading designed for the intent of enhancing intelligent decision-making and delivering top-notch performance. Whether you&aposre a fintech startup, a hedge fund, an entrepreneur, or an individual trader, we enable the creation of necessary tools and expertise to deliver exceptional results and change profitability.
                     <br/><br/>
