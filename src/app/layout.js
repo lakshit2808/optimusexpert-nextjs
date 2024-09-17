@@ -6,8 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Where Number meets Precision. Performance. Profitability',
-  description: "Unlock growth with Optimus Expert: Your trusted partner for seamless innovation, technology integration, and exponential success across sectors globally.",
+  title: 'Build Scalable Trading Systems, AI, SaaS for your Business',
+  description: "Join us for building intelligent trading systems, AI products, and scalable SaaS with us. We Take your business to the next level with the latest technology.",
   verification: {
     google: "google6c0de3751a1cc1be.html",
   }

@@ -13,7 +13,7 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(80 - Math.random() * 0.5); 
-  const toRotate = ["Where Numbers meets Precision, Performance, and Profitability"];
+  const toRotate = ["Build Scalable Trading Systems, AI Products, SaaS for your Business"];
   const period = 500;
 
   useEffect(() => {
@@ -53,12 +53,14 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to Optimus Expert</span>
+              <div className={isVisible ? "animate__animated animate__fadeIn " : ""}>
+                <span className="tagline mt-2">Welcome to Optimus Expert</span>
                 <h1>{toRotate}</h1>
-                  <p id="banner-info">We are your trusted partner in navigating ongoing transformation across sectors, services, and platforms. At Optimus Expert, we believe in propelling the future of users, corporate entities, and institutions by seamlessly integrating the power of innovation, technology, and information. From New York to Mumbai, London to Canberra, we extend our minds, ideas, and challenge the boundaries of the conservative establishment.
-                  <br/><br/>
-Leverage cutting-edge technologies, embrace new opportunities, and experience exponential growth. With Optimus Expert, you gain the agility and durability needed to thrive in today&apos;s rapidly evolving landscape. Let us empower you to embrace transformation, unlock precision, achieve outstanding performance, and drive profitability.</p>
+                  <p id="banner-info">
+                  At Optimus Expert, our services are about developing high-tech systems for trading, innovative AI products, and scalable SaaS solutions that help you take your business forward. We build advanced AI-based platforms and systems for totally automated trading designed for the intent of enhancing intelligent decision-making and delivering top-notch performance. Whether you're a fintech startup, a hedge fund, an entrepreneur, or an individual trader, we enable the creation of necessary tools and expertise to deliver exceptional results and change profitability.
+                    <br/><br/>
+                    We offer customized solutions as per your needs with in-depth understanding of finance and technology by our experts. Starting from testing robust back and performance evaluation, through the development of advanced AI models, your business will leverage latest progress in the technology. Partner with us to revolutionize operations and unlock new growth opportunities through scalable and intelligent solutions.
+                    </p>
                   <a rel="preload" as="document" href="/form" id="connect-redirect">Let&apos;s Connect <ArrowRightCircle size={25} /></a>
               </div>}
             </TrackVisibility>
