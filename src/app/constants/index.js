@@ -32,6 +32,24 @@ const services = [
     ),
   },
   {
+    title: "Scalable SaaS Development",
+    icon: backend,
+    description: (
+      <p>
+        Transform your operations with our bespoke SaaS development services. We design and build scalable software solutions that grow with your business, offering flexibility, efficiency, and robust performance to meet your evolving needs.
+      </p>
+    ),
+  },
+  {
+    title: "Gen AI Product Design and Development",
+    icon: creator,
+    description: (
+      <p>
+Leverage the power of artificial intelligence with our specialized AI product design and development services. We create intelligent, scalable AI solutions that enhance decision-making, automate processes, and drive innovation for your business
+      </p>
+    ),
+  },
+  {
     title: "Low-Latency Algorithmic Trading Systems",
     icon: mobile,
     description: (
@@ -146,38 +164,6 @@ const services = [
     ),
   },
   {
-    title: "Portfolio Risk Management Systems",
-    icon: mobile,
-    description: (
-      <p>
-        Optimus Expert offers comprehensive Portfolio Risk Management Systems as
-        a service, designed to help clients effectively navigate the
-        complexities of risk in their investment portfolios. Our cutting-edge
-        systems leverage advanced algorithms, data analytics, and risk modeling
-        techniques to provide actionable insights and strategies.
-        <br />
-        <br />
-        With Optimus Expert&apos;s Portfolio Risk Management Systems, clients
-        gain a clear understanding of their portfolio&apos;s risk profile and
-        potential vulnerabilities. Our tailored solutions enable proactive risk
-        mitigation and optimization of risk-return trade-offs, allowing clients
-        to make informed investment decisions and maximize returns.
-        <br />
-        <br />
-        Our experienced team of risk management professionals collaborates
-        closely with clients to customize risk management strategies that align
-        with their unique investment objectives and risk tolerance. By
-        implementing our robust systems, clients can enhance portfolio
-        stability, protect capital, and achieve long-term growth.
-        <br />
-        <br />
-        With Optimus Expert&apos;s Portfolio Risk Management Systems, you can
-        navigate the investment landscape with confidence, knowing that your
-        risks are effectively managed and your portfolio is poised for success.
-      </p>
-    ),
-  },
-  {
     title: "Backtesting and Performance Evaluation",
     icon: backend,
     description: (
@@ -209,31 +195,7 @@ const services = [
         performance with our expertise.
       </p>
     ),
-  },
-  {
-    title: "Quantitative Research",
-    icon: creator,
-    description: (
-      <p>
-        Optimus Expert offers exceptional quantitative research services,
-        harnessing the power of data-driven insights to drive your success. Our
-        expert team utilizes advanced methodologies and cutting-edge
-        technologies to extract valuable information from vast datasets, uncover
-        patterns, and generate actionable intelligence.
-        <br />
-        <br />
-        With our quantitative research service, we provide you with a deep
-        understanding of market trends, risk analysis, and investment
-        opportunities. Our comprehensive approach enables you to make informed
-        decisions, optimize strategies, and stay ahead of the competition.
-        <br />
-        <br />
-        Partner with Optimus Expert and unlock the transformative potential of
-        quantitative research to enhance your decision-making, mitigate risks,
-        and maximize returns.
-      </p>
-    ),
-  },
+  }
 ];
 
 const experiences = [
