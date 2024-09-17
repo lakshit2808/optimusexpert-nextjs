@@ -13,19 +13,19 @@ import PartnerSlider from './OELandingPage/PartnerSlider'
 
 export default function Home() {
 
-useEffect(() => {
-  const script = document.createElement('script');
+// useEffect(() => {
+//   const script = document.createElement('script');
 
-  script.src = "https://assets.calendly.com/assets/external/widget.js";
-  script.async = true;
+//   script.src = "https://assets.calendly.com/assets/external/widget.js";
+//   script.async = true;
 
-  document.body.appendChild(script);
+//   document.body.appendChild(script);
 
-  return () => {
+//   return () => {
     
-    document.body.removeChild(script);
-  }
-}, []);
+//     document.body.removeChild(script);
+//   }
+// }, []);
 
   return ( 
     <>
@@ -41,7 +41,7 @@ useEffect(() => {
     <Footer/>
 
     <Script strategy='afterInteractive' src="https://www.googletagmanager.com/gtag/js?id=G-Q7RFLX9WDB"/>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7RFLX9WDB"></script>
+    <Script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7RFLX9WDB"></Script>
     <Script id='google-analytics' strategy='afterInteractive'>
       {` window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
