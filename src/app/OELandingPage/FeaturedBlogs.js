@@ -62,7 +62,7 @@ const FeaturedBlogs = ({ experience }) => {
 
 const Experience = () => {
   return (
-    <div id="blog">
+    <div id="Insights">
       <div variants={textVariant()}>
       <p className={`${styles.sectionSubText} text-center`}>
       Unleashing the Power of Quantitative Strategies
