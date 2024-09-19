@@ -1,5 +1,5 @@
-import { MongoClient } from 'mongodb';
 
+import { MongoClient } from 'mongodb';
 let cachedClient = null;
 let cachedDb = null;
 
@@ -15,7 +15,7 @@ async function connectToDatabase(uri) {
   });
 
   await client.connect();
-  const db = client.db('optimusexpert'); // Replace with your database name
+  const db = client.db(process.env.MONGODB_NAME); // Replace with your database name
 
   cachedClient = client;
   cachedDb = db;
@@ -27,7 +27,7 @@ async function connectToDatabase(uri) {
 export default async function handler(req, res) {
   if (req.method === 'POST') {
     try {
-      const { db } = await connectToDatabase("mongodb+srv://football:iCaBCtqvJpGjfE4s@footballprediction.9kflzpo.mongodb.net/?retryWrites=true&w=majority&appName=FootballPrediction");
+      const { db } = await connectToDatabase(process.env.MONGODB_URL);
 
       const data = req.body;
 
