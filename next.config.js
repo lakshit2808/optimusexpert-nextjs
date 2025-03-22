@@ -21,5 +21,16 @@ module.exports = {
   env: {
     GOOGLE_SERVICE_PRIVATE_KEY: process.env.GOOGLE_PRIVATE_KEY,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'media.geeksforgeeks.org',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
+
 
 };

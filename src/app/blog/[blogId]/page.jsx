@@ -42,7 +42,7 @@ export default function BlogContentPage({ params }) {
   }, [blogPost]);
 
   if (loading) {
-    return <div className="text-white">Loading...</div>; // Show loading indicator
+    return <div className="min-h-screen bg-black text-white flex items-center justify-center">Loading...</div>;
   }
 
   if (error) {

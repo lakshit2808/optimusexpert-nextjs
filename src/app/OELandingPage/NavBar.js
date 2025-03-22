@@ -50,8 +50,8 @@ export const NavBar = () => {
               <a rel="preload" as="/#home" href="/#home" className={activeLink === 'home' ? 'active product-link' : 'product-link'} onClick={() => onUpdateActiveLink('home')}>Home</a>
               <a rel="preload" as="/#services" href="/#services" className={activeLink === 'skills' ? 'active product-link' : 'product-link'} onClick={() => onUpdateActiveLink('skills')}>Services</a>
               <a rel="preload" as="/#Insights" href='/#Insights' className={activeLink === 'Insights' ? 'active product-link' : 'product-link'} onClick={() => onUpdateActiveLink('Insights')}>Insights</a>             
-              <a rel="preload" as="document" href='/products' className={activeLink === 'products' ? 'active product-link' : 'product-link'} onClick={(e) => onUpdateActiveLink('products')}>Products</a>
-              <Link href='/blog' className={activeLink === 'blog' ? 'active product-link' : 'product-link'} onClick={(e) => onUpdateActiveLink('blog')}>Blog</Link>
+              {/* <a rel="preload" as="document" href='/products' className={activeLink === 'products' ? 'active product-link' : 'product-link'} onClick={(e) => onUpdateActiveLink('products')}>Products</a> */}
+              {/* <Link href='/blog' className={activeLink === 'blog' ? 'active product-link' : 'product-link'} onClick={(e) => onUpdateActiveLink('blog')}>Blog</Link> */}
 
               {/* <Nav.Link href='#testimonials' className={activeLink === 'testimonials' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('testimonials')}>Testimonials</Nav.Link> */}
               <Link rel="preload" as="/#project" href="/#project" className={activeLink === 'projects' ? 'active product-link' : 'product-link'} onClick={(e) => onUpdateActiveLink('projects')}>Projects</Link>

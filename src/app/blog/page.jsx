@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect, useMemo } from 'react';
-import { Input, Card, CardBody, CardFooter, Checkbox, Image } from "@nextui-org/react";
+import { Input, Card, CardBody, CardFooter, Checkbox } from "@nextui-org/react";
+import Image from 'next/image';
 import { NavBar } from '../OELandingPage/NavBar';
 import Link from 'next/link';
 
@@ -101,8 +102,10 @@ export default function BlogPage() {
                 <Card key={post.id} className="bg-gray-800 border-gray-700">
                   <CardBody className="p-0">
                     <Image
-                      src={post.image}
+                      src={"https://media.geeksforgeeks.org/wp-content/uploads/20230816191453/gfglogo.png"}
                       alt={post.title}
+                      width={800} // Specify your image width
+                      height={400} // Specify your image height
                       className="w-full h-40 object-cover"
                       loading="lazy" // Lazy load images
                     />
